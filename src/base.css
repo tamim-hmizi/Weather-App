@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Italic.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+.container {
+  background-color: rgba(137, 43, 226, 0.404);
+  margin-inline: auto;
+  margin-top: 100px;
+  width: 1000px;
+  padding: 50px;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  border: none;
+  border-radius: 20px;
+}
+form {
+  grid-column-start: span 3;
+  display: flex;
+  gap: 30px;
+}
+input {
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 100px;
+}
+input[type="text"] {
+  width: 500px;
+}
+input[type="submit"] {
+  width: 100px;
+}
+.condition,
+.details,
+.place {
+  color: white;
+}
+h3 {
+  display: block;
+}
+.condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.changeTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  visibility: hidden;
+  gap: 10px;
+}
+.f,
+.c {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+}
+.clickedTemp {
+  background-color: rgba(88, 27, 145, 0.308);
+  color:  white;
+}
+.disabled {
+  background-color: rgba(128, 128, 128, 0.281);
+  color: white;
+}
+
